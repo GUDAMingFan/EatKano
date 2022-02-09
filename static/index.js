@@ -139,7 +139,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
         });
         createjs.Sound.registerSound({
             src: "./static/music/huanxiao.mp3",
-            id: "tap"
+            id: "huanxiao"
         });
         gameRestart();
     }
@@ -329,7 +329,7 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
             if (!_gameStart) {
                 gameStart();
             }
-            createjs.Sound.play("tap");
+            createjs.Sound.play("huanxiao");
             tar = document.getElementById(p.id);
             tar.className = tar.className.replace(_ttreg, ' tt$1');
             _gameBBListIndex++;
